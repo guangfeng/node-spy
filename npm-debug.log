@@ -1,0 +1,91 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/jim/.nvm/v0.9.4/bin/node',
+1 verbose cli   '/home/jim/.nvm/v0.9.4/bin/npm',
+1 verbose cli   'publish',
+1 verbose cli   'node-spy' ]
+2 info using npm@1.1.70
+3 info using node@v0.9.4
+4 verbose publish [ 'node-spy' ]
+5 verbose read json /home/jim/node-spy/node-spy/package.json
+6 verbose cache add [ 'node-spy', null ]
+7 silly cache add name=undefined spec="node-spy" args=["node-spy",null]
+8 verbose parsed url { protocol: null,
+8 verbose parsed url   slashes: null,
+8 verbose parsed url   auth: null,
+8 verbose parsed url   host: null,
+8 verbose parsed url   port: null,
+8 verbose parsed url   hostname: null,
+8 verbose parsed url   hash: null,
+8 verbose parsed url   search: null,
+8 verbose parsed url   query: null,
+8 verbose parsed url   pathname: 'node-spy',
+8 verbose parsed url   path: 'node-spy',
+8 verbose parsed url   href: 'node-spy' }
+9 silly lockFile 9ab750bc-node-spy node-spy
+10 verbose lock node-spy /home/jim/.npm/9ab750bc-node-spy.lock
+11 silly lockFile 9ab750bc-node-spy node-spy
+12 verbose addNamed [ 'node-spy', '' ]
+13 verbose addNamed [ null, '' ]
+14 silly lockFile 23253855-node-spy node-spy@
+15 verbose lock node-spy@ /home/jim/.npm/23253855-node-spy.lock
+16 silly addNameRange { name: 'node-spy', range: '', hasData: false }
+17 verbose url raw node-spy
+18 verbose url resolving [ 'https://registry.npmjs.org/', './node-spy' ]
+19 verbose url resolved https://registry.npmjs.org/node-spy
+20 info trying registry request attempt 1 at 03:06:00
+21 verbose etag "2PLBG9VL76UAF8L69AY0E09BT"
+22 http GET https://registry.npmjs.org/node-spy
+23 http 304 https://registry.npmjs.org/node-spy
+24 silly registry.get cb [ 304,
+24 silly registry.get   { server: 'CouchDB/1.2.1 (Erlang OTP/R15B)',
+24 silly registry.get     etag: '"2PLBG9VL76UAF8L69AY0E09BT"',
+24 silly registry.get     date: 'Thu, 24 Jan 2013 09:18:25 GMT',
+24 silly registry.get     'content-length': '0' } ]
+25 verbose etag node-spy from cache
+26 silly addNameRange number 2 { name: 'node-spy', range: '', hasData: true }
+27 silly addNameRange versions [ 'node-spy', [ '0.1.0' ] ]
+28 verbose addNamed [ 'node-spy', '0.1.0' ]
+29 verbose addNamed [ '0.1.0', '0.1.0' ]
+30 silly lockFile 35e46404-node-spy-0-1-0 node-spy@0.1.0
+31 verbose lock node-spy@0.1.0 /home/jim/.npm/35e46404-node-spy-0-1-0.lock
+32 verbose read json /home/jim/.npm/node-spy/0.1.0/package/package.json
+33 silly lockFile 35e46404-node-spy-0-1-0 node-spy@0.1.0
+34 silly lockFile 23253855-node-spy node-spy@
+35 silly publish { name: 'node-spy',
+35 silly publish   version: '0.1.0',
+35 silly publish   description: 'Concurrent Spider with Node.js and server-side jQuery',
+35 silly publish   main: 'node-spy.js',
+35 silly publish   directories: { example: 'examples' },
+35 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+35 silly publish   repository: { type: 'git', url: 'https://github.com/caljim/node-spy.git' },
+35 silly publish   keywords: [ 'spider', 'jsdom', 'jquery', 'crawel', 'fetch' ],
+35 silly publish   author: { name: '光风' },
+35 silly publish   license: 'MIT',
+35 silly publish   readmeFilename: 'README.md',
+35 silly publish   gitHead: 'e7f0d871733569c5c4c8257cfad2532e99b0f882',
+35 silly publish   readme: 'Node-Spy\n========\n\nConcurrent Spider with Node.js and server-side jQuery\n\nIt features:\n * A clean, simple API from https://github.com/mikeal/spider/\n * server-side DOM & automatic jQuery insertion \n * Configurable pool size and retries\n * Priority of requests\n * forceUTF8 mode to let spider charset detection and conversion\n * Cache in memory\n\nHelp & Forks welcomed!\n\n\nOptions reference\n-----------------\n\nYou can pass options to the Spy() constructor  or Spy:add() method.if some option both pass add() and Spy() constructor, add() choose first!\n\nThis options list is a strict superset of mikeal\'s request options and will be directly passed to\nthe request() method.\n\nBasic request options [method Add Only]:\n\n * url: String, the URL you want to crawl\n * timeout : Number, in milliseconds        (Default 60000)\n * method, xxx: All mikeal\'s requests options are accepted\n\nConcurrent options [Spy() Only]:\n\n * maxConnections: Number, Size of the worker pool (Default 10),\n * priorityRange: Number, Range of acceptable priorities starting from 0 (Default 10),\n * priority: Number, Priority of this request (Default 5), \n\nRetry options [Both]:\n\n * retries: Number of retries if the request fails (Default 3),\n * retryTimeout: Number of milliseconds to wait before retrying (Default 10000),\n\nServer-side DOM options [Both]:\n\n * jQuery: Boolean, if true creates a server-side DOM and adds jQuery (Default true)\n * jQueryUrl: String, path to the jQuery file you want to insert (Defaults to bundled jquery-1.8.1.min.js)\n * autoWindowClose: Boolean, if false you will have to close the window yourself with result.window.close(). Useful when your callback needs to continue having the window open until some async code has ran. (Default true)\n\nCharset encoding [Both]:\n\n * forceUTF8: Boolean, if true will try to detect the page charset and convert it to UTF8 if necessary. Never worry about encoding anymore! (Default false),\n\nCache [Both]:    \n\n * cache: Boolean, if true stores requests in memory (Default false)\n * skipDuplicates: Boolean, if true skips URIs that were already crawled, without even calling callback() (Default false)\n',
+35 silly publish   _id: 'node-spy@0.1.0' }
+36 info prepublish node-spy@0.1.0
+37 verbose url raw node-spy
+38 verbose url resolving [ 'https://registry.npmjs.org/', './node-spy' ]
+39 verbose url resolved https://registry.npmjs.org/node-spy
+40 info trying registry request attempt 1 at 03:06:02
+41 http PUT https://registry.npmjs.org/node-spy
+42 http 409 https://registry.npmjs.org/node-spy
+43 verbose url raw node-spy
+44 verbose url resolving [ 'https://registry.npmjs.org/', './node-spy' ]
+45 verbose url resolved https://registry.npmjs.org/node-spy
+46 info trying registry request attempt 1 at 03:06:04
+47 http GET https://registry.npmjs.org/node-spy
+48 http 200 https://registry.npmjs.org/node-spy
+49 error publish fail Cannot publish over existing version.
+49 error publish fail Bump the 'version' field, set the --force flag, or
+49 error publish fail     npm unpublish 'node-spy@0.1.0'
+49 error publish fail and try again
+50 error System Linux 3.5.7-gentoo
+51 error command "/home/jim/.nvm/v0.9.4/bin/node" "/home/jim/.nvm/v0.9.4/bin/npm" "publish" "node-spy"
+52 error cwd /home/jim/node-spy
+53 error node -v v0.9.4
+54 error npm -v 1.1.70
+55 error code EPUBLISHCONFLICT
+56 verbose exit [ 1, true ]

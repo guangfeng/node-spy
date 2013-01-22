@@ -1,0 +1,27 @@
+{
+  "name": "node-spy",
+  "version": "0.1.1",
+  "description": "Concurrent Spider with Node.js and server-side jQuery",
+  "main": "node-spy.js",
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/caljim/node-spy.git"
+  },
+  "keywords": [
+    "spider",
+    "jsdom",
+    "jquery",
+    "crawel",
+    "fetch"
+  ],
+  "author": "光风",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "gitHead": "e7f0d871733569c5c4c8257cfad2532e99b0f882"
+}
